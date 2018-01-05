@@ -1,0 +1,161 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//пока не нужно, не знаю зачем ононадо, удалю потом
+//html, body
+	//height: 100%
+
+body
+	//height: 100%
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.45
+	font-family: $main-font
+	overflow-x: hidden
+	opacity: 1
+	background-color: #f7f7f7
+	
+h1
+	letter-spacing: 3px
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+
+.site-head
+	background-color: $bgcolor
+	border-bottom: 1px solid $activecolor
+
+
+.logo
+	a
+		img
+			display: block
+			width: 100px
+			float: left
+			padding-top: 12px
+			padding-bottom: 7px
+.nav
+	padding: 0
+	margin: 0
+	
+	li
+		padding: 16px 12px
+		display: inline-block		
+		text-align: center
+		height: auto
+		a
+			font-size: 14px
+			text-decoration: none
+			color: $fontcolor
+			&:hover
+				color: #fff
+		&:active
+			background-color: $activecolor
+.navbar-left
+	float: left
+.navbar-right
+	float: right
+	li
+		a
+			.fa-sort-desc
+				display: inline-block
+				vertical-align: top
+				padding-left: 5px
+				padding-top: 6px
+				font-size: 12px
+
+
+
+//Заголовки хедера
+.header-text
+	background-color: $bgcolor
+	border-top: 1px solid #2d4468
+	.main-h1
+		h1
+			color: #fff
+			font-size: 60px
+			margin-top: 50px
+			margin-bottom: 15px
+			line-height: 1
+		p
+			color: $fontcolor
+			margin: 0 0 60px 0
+			font-family: $light-font
+			font-size: 21px
+    	line-height: 1.5
+
+
+
+//banner
+
+.banner
+	background-color: #fafafa
+	border-bottom: 1px solid #fafafa
+	border-top: 1px solid #fafafa
+	border-bottom: 1px solid #e2e2e2
+	.banner-text
+		p
+			font-size: 14px
+			color: #777
+			a
+				color: #43759e
+				text-decoration: none
+				&:focus,&:hover
+					color: #2c4d68
+					text-decoration: underline
+.menu
+	//background-color: #f7f7f7
+	.sidebar
+		padding-top: 15px
+		display: block
+		.menu-items
+			display: block
+			ul
+				list-style-type: none
+				margin: 30px 0 30px 0
+				padding: 0
+				li
+					a
+						position: relative
+						display: block
+						padding: 5px 20px
+						text-decoration: none
+
+@import "media" // Всегда в конце
